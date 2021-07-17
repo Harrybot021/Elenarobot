@@ -74,26 +74,26 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Elena
+Hello, I'M Miss Gladdia
 `I'm Here to help you manage your groups! Hit` /help
-Maintained by @Black_heart_hacker_xon ❤
+Maintained by @Itz_Rupayan ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD TO YOUR GROUPS ➕️", url="t.me/Miss_Elena_Robot?startgroup=true"),
+            text="➕️ ADD Miss Gladdia TO YOUR GROUPS ➕️", url="t.me/Miss_GladdiaRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ABOUT", callback_data="layla_"),
         InlineKeyboardButton(
-            text="SUPPORT", url=f"https://t.me/yone_support_official"
+            text="SUPPORT", url=f"https://t.me/Empire_Support21"
         ),
     ],
     [
         InlineKeyboardButton(text="LOGS", url=f"https://t.me/elenalogs"),
         InlineKeyboardButton(
-            text="FEDERATION", url=f"https://t.me/gaurboofedration"
+            text="FEDERATION", url=f"https://t.me/Empirefed021"
         ),
     ],
     [
@@ -105,13 +105,13 @@ buttons = [
 HELP_STRINGS = """
 `Hi.. I'M` Elena
 `click on the button below to get documentation about specific modules..`
-Powered by :- [GRB NETWORK](t.me/grb_network)"""
+Powered by :- [EMPIRE NETWORK](https://t.me/Empire_Network)"""
 
-layla_IMG = "https://telegra.ph/file/bf259ce77605f06d3a5b6.jpg"
+layla_IMG = "https://telegra.ph/file/1b2227b1c403ad77b5611.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Boss](t.me/Black_heart_hacker_xon) \
- Supporting isnt always financial! [GRB NETWORK](t.me/grb_network) \
+ You can support the project [Empire](t.me/Itz_Rupayan) \
+ Supporting isnt always financial! [EMPIRE NETWORK](https://t.me/Empire_Network) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -357,19 +357,19 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Elena*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Miss Gladdia*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Elena's licensed under the GNU General Public License v3.0_
-                 \n❍ GRB NETWORK @grb_network
-                 \n❍ Support Group @yone_support_official
-                 \n❍ My BF @GROUP_SPARROW_ROBOT.
-                 \nHere is the [💾Repository](https://github.com/gauravsingh0/Elenarobot).
-                 \n\nIf you have any question about Elena, let us know at .""",
+                 \n\n_Gladdia's licensed under the GNU General Public License v3.0_
+                 \n❍ EMPIRE NETWORK @Empire_Network
+                 \n❍ Support Group @Empire_Support21
+                 \n❍ My BF @Itz_Rupayan.
+                 \nHere is the [💾Repository](https://github.com/Harrybot021/Elenarobot).
+                 \n\nIf you have any question about Miss Gladdia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -395,8 +395,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Elena*
-                 \nHere is the [Source Code](https://github.com/gauravsingh0/Elenarobot) .""",
+            text=""" Hi..🤗 I'm *Miss Gladdia*
+                 \nHere is the [Source Code](https://github.com/Harrybot021/Elenarobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
