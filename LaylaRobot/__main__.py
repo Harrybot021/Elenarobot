@@ -103,7 +103,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Elena
+`Hi.. I'M` Miss Gladdia
 `click on the button below to get documentation about specific modules..`
 Powered by :- [EMPIRE NETWORK](https://t.me/Empire_Network)"""
 
