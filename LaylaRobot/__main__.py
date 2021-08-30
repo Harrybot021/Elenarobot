@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Miss Gladdia
+Hello, I'M Miss AngeloX
 `I'm Here to help you manage your groups! Hit` /help
 Maintained by @Itz_Rupayan ❤
 """
@@ -82,7 +82,7 @@ Maintained by @Itz_Rupayan ❤
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD Miss Gladdia TO YOUR GROUPS ➕️", url="t.me/Miss_GladdiaRobot?startgroup=true"),
+            text="➕️ ADD Miss AngeloX TO YOUR GROUPS ➕️", url="t.me/AngeloX_Robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ABOUT", callback_data="layla_"),
@@ -103,11 +103,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Miss Gladdia
+`Hi.. I'M` Miss AngeloX
 `click on the button below to get documentation about specific modules..`
 Powered by :- [EMPIRE NETWORK](https://t.me/Empire_Network)"""
 
-layla_IMG = "https://telegra.ph/file/1b2227b1c403ad77b5611.jpg"
+layla_IMG = "https://telegra.ph/file/9af170bfe9500ef58de99.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Empire](t.me/Itz_Rupayan) \
@@ -357,7 +357,7 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Miss Gladdia*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Miss AngeloX*, a powerful group management bot built by @Itz_Rupayan to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -368,7 +368,7 @@ def layla_about_callback(update, context):
                  \n❍ EMPIRE NETWORK @Empire_Network
                  \n❍ Support Group @Empire_Support21
                  \n❍ My BF @Itz_Rupayan.
-                 \nHere is the [💾Repository](https://github.com/Harrybot021/Elenarobot).
+                 \nHere is the [💾Repository](https://t.me/Empire_Support21).
                  \n\nIf you have any question about Miss Gladdia, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -395,8 +395,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Miss Gladdia*
-                 \nHere is the [Source Code](https://github.com/Harrybot021/Elenarobot) .""",
+            text=""" Hi..🤗 I'm *Miss AngeloX*
+                 \nHere is the [Source Code](https://t.me/Empire_Support21) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -691,7 +691,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹 for my love❤")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
